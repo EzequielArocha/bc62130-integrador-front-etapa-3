@@ -8,7 +8,7 @@ import Inicio from "./pages/Inicio";
 import Alta from "./pages/Alta";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
-import Carrito from "./pages/carrito";
+import Carrito from "./pages/Carrito";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
