@@ -1,0 +1,283 @@
+{
+  "productos": [
+    {
+      "nombre": "Auriculares",
+      "foto": "img/auriculares.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 250.5,
+      "stock": "4444",
+      "marca": "Marca",
+      "categoria": "Auriculares",
+      "id": 1,
+      "envio": false
+    },
+    {
+      "nombre": "Apple Smartwatch",
+      "foto": "img/Smartwatch-Applewebp.png",
+      "detalles": "Quasi cupiditate quisquam facere molestiae",
+      "precio": 240.3,
+      "stock": "4",
+      "marca": "Apple",
+      "categoria": "Relojes",
+      "id": 2,
+      "envio": true
+    },
+    {
+      "nombre": "Bicicletas",
+      "foto": "img/bicicleta.png",
+      "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+      "precio": 985,
+      "stock": 4,
+      "marca": "Sleek Cotton Chips",
+      "categoria": "Rodados",
+      "id": 3,
+      "envio": false
+    },
+    {
+      "nombre": "PlayStation 5",
+      "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "foto": "img/PlayStation5.png",
+      "precio": 678,
+      "stock": 7,
+      "marca": "Sony",
+      "categoria": "Generic",
+      "id": 4,
+      "envio": true
+    },
+    {
+      "nombre": "Impresoras",
+      "detalles": "Facere molestiae odio neque rerum provident voluptas",
+      "foto": "img/impresora.png",
+      "precio": 1200,
+      "stock": 4,
+      "marca": "Epson",
+      "categoria": "Impresoras",
+      "id": 5,
+      "envio": true
+    },
+    {
+      "id": 6,
+      "nombre": "Monitores",
+      "precio": 332.22,
+      "stock": 4,
+      "marca": "Samsung",
+      "categoria": "Electronica",
+      "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio",
+      "foto": "img/monitor.png",
+      "envio": true
+    },
+    {
+      "id": 7,
+      "nombre": "Notebooks",
+      "precio": 333.22,
+      "stock": 2,
+      "marca": "Lenovo",
+      "categoria": "Notebooks",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/Lenovo.png",
+      "envio": false
+    },
+    {
+      "id": 8,
+      "Nombre": "",
+      "Precio": "",
+      "Stock": "",
+      "Marca": "",
+      "Categoria": "",
+      "Detalles": "",
+      "Foto": "",
+      "Envío": false,
+      "nombre": "Celulares",
+      "precio": "400",
+      "stock": "2",
+      "marca": "Samsung",
+      "categoria": "Celulares",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/smarthphone.png"
+    },
+    {
+      "id": 9,
+      "Nombre": "",
+      "Precio": "",
+      "Stock": "",
+      "Marca": "",
+      "Categoria": "",
+      "Detalles": "",
+      "Foto": "",
+      "Envío": false,
+      "nombre": "PCs de Escritorio",
+      "precio": "1000",
+      "stock": "5",
+      "marca": "Lenovo",
+      "categoria": "Computadoras",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/pc.png"
+    },
+    {
+      "id": 10,
+      "Nombre": "",
+      "Precio": "",
+      "Stock": "",
+      "Marca": "",
+      "Categoria": "",
+      "Detalles": "",
+      "Foto": "",
+      "Envío": false,
+      "nombre": "Camaras de Seguridad",
+      "precio": "500",
+      "stock": "10",
+      "marca": "Kanjinet",
+      "categoria": "Camaras",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/camara.png",
+      "envio": true
+    },
+    {
+      "id": 11,
+      "Nombre": "",
+      "Precio": "",
+      "Stock": "",
+      "Marca": "",
+      "Categoria": "",
+      "Detalles": "",
+      "Foto": "",
+      "Envío": false,
+      "nombre": "Smart TVs",
+      "precio": "700",
+      "stock": "10",
+      "marca": "LG",
+      "categoria": "Tvs",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/SmartTv.png",
+      "envio": true
+    }
+  ],
+  "carrito": [
+    [
+      {
+        "nombre": "Auriculares",
+        "foto": "img/auriculares.png",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Marca",
+        "categoria": "Auriculares",
+        "id": 1,
+        "envio": false,
+        "cantidad": 3
+      },
+      {
+        "nombre": "Apple Smartwatch",
+        "foto": "img/Smartwatch-Applewebp.png",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Apple",
+        "categoria": "Relojes",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Bicicletas",
+        "foto": "img/bicicleta.png",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Rodados",
+        "id": 3,
+        "envio": false,
+        "cantidad": 3
+      },
+      {
+        "nombre": "PlayStation 5",
+        "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "foto": "img/PlayStation5.png",
+        "precio": 678,
+        "stock": 7,
+        "marca": "Sony",
+        "categoria": "Generic",
+        "id": 4,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Impresoras",
+        "detalles": "Facere molestiae odio neque rerum provident voluptas",
+        "foto": "img/impresora.png",
+        "precio": 1200,
+        "stock": 4,
+        "marca": "Epson",
+        "categoria": "Impresoras",
+        "id": 5,
+        "envio": true,
+        "cantidad": 1
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "nombre": "Monitores",
+        "precio": 332.22,
+        "stock": 4,
+        "marca": "Samsung",
+        "categoria": "Electronica",
+        "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio",
+        "foto": "img/monitor.png",
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "id": 7,
+        "nombre": "Notebooks",
+        "precio": 333.22,
+        "stock": 2,
+        "marca": "Lenovo",
+        "categoria": "Notebooks",
+        "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "foto": "img/Lenovo.png",
+        "envio": false,
+        "cantidad": 3
+      }
+    ],
+    [
+      {
+        "nombre": "Auriculares",
+        "foto": "img/auriculares.png",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Marca",
+        "categoria": "Auriculares",
+        "id": 1,
+        "envio": false,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Apple Smartwatch",
+        "foto": "img/Smartwatch-Applewebp.png",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Apple",
+        "categoria": "Relojes",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Bicicletas",
+        "foto": "img/bicicleta.png",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Rodados",
+        "id": 3,
+        "envio": false,
+        "cantidad": 1
+      }
+    ]
+  ]
+}

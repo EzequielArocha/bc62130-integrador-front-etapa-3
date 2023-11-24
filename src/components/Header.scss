@@ -1,0 +1,189 @@
+/* ------------------------------------- */
+/* HEADER                                */
+/* ------------------------------------- */
+
+.main-header {
+  display: flex;
+
+  /* Posible  Cambio */
+  /*   width: 100%;
+    position: fixed;
+    z-index: 1; */
+
+  /*---1ER CAMBIO----*/
+  flex-direction: column-reverse;
+
+  @media (max-width: 768px) {
+    & {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+#menu {
+  display: none;
+
+  &:checked + .nav-bar {
+    display: block;
+  }
+
+  &:checked ~ .search-bar .menu-toogle__label {
+    background-color: yellow;
+  }
+}
+
+/* ------------------------------------- */
+/* SEARCH BAR                            */
+/* ------------------------------------- */
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo-container,
+  &__form-container {
+    padding: 1em;
+    input {
+      border-radius: 10px;
+      margin: 10px;
+    }
+  }
+
+  &__logo-container {
+    display: inline-block;
+    background-color: #d2d1d1;
+    @media (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__logo-container img {
+    width: 55%;
+    vertical-align: middle;
+
+    height: auto;
+  }
+
+  &__form-container {
+    /* 4to Camabio */
+    background-color: #d2d1d1;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-left: -150px;
+
+    @media (max-width: 768px) {
+      & {
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+  &__form-label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+  }
+
+  &__form-search {
+    /*Cambios:*/
+    width: 50%;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #1d74a9;
+    border-radius: 3px;
+
+    @media (max-width: 768px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  &__form-submit {
+    background-color: #1d74a9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  &__form-submit:hover {
+    transform: scale(1.1);
+    background-color: #2c79a8;
+    border: 1px solid #332f2f;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.534);
+  }
+
+  &__carrito-container {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    cursor: pointer;
+    background-color: #d2d1d1;
+
+    & .fa-cart-shopping {
+      font-size: 35px;
+      color: #1d74a9;
+      transition: 0.5s;
+      margin: auto;
+    }
+    & .fa-cart-shopping:hover {
+      color: #0b2fd3;
+      transform: scale(1.2);
+    }
+  }
+}
+
+/* ------------------------------------- */
+/* MENU TOOGLE                           */
+/* ------------------------------------- */
+
+.menu-toggle {
+  display: none;
+  background-color: red;
+  flex: 0 0 3em;
+  position: relative;
+  cursor: pointer;
+
+  &__label {
+    display: block;
+    background-color: black;
+    height: 100%;
+  }
+
+  &__top-bread,
+  &__meat,
+  &__bottom-bread {
+    display: block;
+    background-color: #333;
+    height: 0.2em;
+    position: absolute;
+    left: 0.5em;
+    right: 0.5em;
+  }
+
+  &__top-bread {
+    top: 0.8em;
+  }
+
+  &__meat {
+    top: 50%;
+    margin-top: -0.1em;
+  }
+
+  &__bottom-bread {
+    bottom: 0.8em;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      display: block;
+    }
+  }
+}

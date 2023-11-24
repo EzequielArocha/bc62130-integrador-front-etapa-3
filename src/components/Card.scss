@@ -1,0 +1,145 @@
+.card__image-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+  img {
+    max-width: 70%;
+    transition: 0.5s;
+  }
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  flex-wrap: wrap;
+  background-color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #1d74a9;
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+
+  &:hover::before {
+    top: -70%;
+    transform: skewY(395deg);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .card__image-container img {
+    max-width: 50%;
+  }
+
+  &__content {
+    position: relative;
+    padding: 6px;
+    height: 60px;
+    width: 100%;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    bottom: -115px;
+    transition: 0.5s;
+    z-index: 1;
+    text-align: center;
+
+    h2 {
+      margin: 10px;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .card__content {
+    height: auto;
+    bottom: -80px;
+    background-color: rgba(10, 10, 10, 0.78);
+  }
+
+  &:hover p {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover img {
+    transform: scale(1.1) rotate(-10deg);
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      min-width: 240px;
+    }
+  }
+
+  @media (min-width: 426px) and (max-width: 768px) {
+    & {
+      min-width: 400px;
+      max-width: 500px;
+      height: 200px;
+    }
+
+    &__article {
+      display: flex;
+    }
+
+    & &__image-container {
+      width: 60%;
+      margin-top: -20px;
+    }
+    &__content {
+      bottom: 30px;
+      background: rgba(27, 27, 27, 0.7);
+    }
+    &:hover &__content {
+      visibility: visible;
+      bottom: 120px;
+    }
+    &:hover &__image-container,
+    &:focus &__image-container {
+      width: 90%;
+    }
+  }
+}
