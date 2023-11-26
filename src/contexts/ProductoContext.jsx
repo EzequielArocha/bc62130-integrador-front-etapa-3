@@ -1,11 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import { del, get, post, put } from "../utils/http";
 
-/* Creando CONTEXTO */
-/* 1er -> Creación del contexto */
 const ProductoContext = createContext();
 
-/* 2do -> El armado del Provider */
 const url = "https://ezequiel-etapa-3.onrender.com/api/productos";
 
 const ProductoProvider = ({ children }) => {
@@ -13,7 +10,7 @@ const ProductoProvider = ({ children }) => {
 
   useEffect(() => {
     obtenerProductos();
-  }, []); // <= Array vacío hace solo una petición
+  }, []);
 
   const obtenerProductos = async () => {
     try {
@@ -26,9 +23,8 @@ const ProductoProvider = ({ children }) => {
 
   const crearProductoContext = async (productoNuevo) => {
     try {
-      // Hago la petición (Guardo producto backend)
       const productoBackNuevo = await post(url, productoNuevo);
-      // Actualizar el estado con el nuevo producto
+
       setProductos([...productos, productoBackNuevo]);
     } catch (error) {
       console.error("Falló crearProductoContext", error);
@@ -77,7 +73,6 @@ const ProductoProvider = ({ children }) => {
   );
 };
 
-/* 3er -> Exportaciones */
 export { ProductoProvider };
 
 export default ProductoContext;
