@@ -9,7 +9,7 @@ const Inicio = () => {
     <main>
       <section className="section-cards">
         <header className="section-cards__header">
-          <h1 class="fa-solid fa-cart-shopping"> BUYTECH</h1>
+          <h1 class="fa-solid fa-cart-shopping"> BUYTECHX</h1>
           <p>Tecnología para el Hogar</p>
         </header>
 
